@@ -14,26 +14,22 @@ try to find out the best video explaining how to install PnetLab
 </br></br>
 **- Install Switch and Router images Cisco/Juniper:**
 
-After installation has done use **`ishare`** Tool to Download Switch/Router images:   
+After installation has done use **`ishare`** Tool to Download Switch/Router images:   </br>
 
- 
+   
+```diff
 
+   action:
+        search: Search images
+        pull:   Download image
+        detail: Detail information of image
+        help:   Show this help page
 
-    Usage ishare [action] [param]
-
-    action:
-        search  :   Search images
-        pull    :   Download image
-        detail  :   Detail information of image
-        help    :   Show this help page
-
-    Example
+   Example
     - ishare search iol 
     - ishare pull L2-Adventerprisek9-ms.nov3_2015_high_iron.bin 
     - ishare routeros-x86-6.48.5.npk 
-    
- 
-    
+```
 
 
 
