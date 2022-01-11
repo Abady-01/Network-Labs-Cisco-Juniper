@@ -12,9 +12,9 @@ Or
 try to find out the best video explaining how to install PnetLab   
    
 </br></br>
-**- Install Swithc and Router images Cisco/Juniper:**
+**- Install Switch and Router images Cisco/Juniper:**
 
-After installation has done use **`ishare`** Tool:   
+After installation has done use **`ishare`** Tool to Download Switch/Router images:   
 
  
 
