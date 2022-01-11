@@ -7,8 +7,8 @@ About I will share any Lab of Cisco or Juniper Network beginning form Essential 
 
 A fter you installing VMware or VirtualBox follow this documents: https://pnetlab.com/pages/documentation?slug=install-PNETlab    
 </br>
-Or
-</br>
+Or 
+
 try to find out the best video explaining how to install PnetLab   
    
 </br></br>
