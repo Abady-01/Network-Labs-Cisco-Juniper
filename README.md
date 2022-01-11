@@ -4,12 +4,14 @@ About I will share any Lab of Cisco or Juniper Network beginning form Essential 
 # prerequisites
 
 **- Install PNETLab:**
-   
-A fter you installing VMware or VirtualBox follow this documents: https://pnetlab.com/pages/documentation?slug=install-PNETlab   
-Or   
+
+A fter you installing VMware or VirtualBox follow this documents: https://pnetlab.com/pages/documentation?slug=install-PNETlab    
+</br>
+Or
+</br>
 try to find out the best video explaining how to install PnetLab   
    
-   
+</br></br>
 **- Install Swithc and Router images Cisco/Juniper:**
 
 After installation has done use **`ishare`** Tool:   
