@@ -12,17 +12,16 @@
 
 **Or** </br></br> 
 
-**Copy The URL of Lab file Then past to >>**    https://downgit.github.io/#/home 
+**Copy The URL of Lab.zip file and generate Download link here >>**    https://downgit.github.io/#/home 
 
 </br>
 </br>
-</br>
+
 </br>
 
 
 ## All username is (lab) and password is (123)  
 
-</br>
 </br>
 </br>
 </br>
