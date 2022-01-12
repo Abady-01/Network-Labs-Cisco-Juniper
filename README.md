@@ -28,7 +28,7 @@ After installation has done use **`ishare`** Tool to Download Switch/Router imag
    Example
     - ishare search iol 
     - ishare pull L2-Adventerprisek9-ms.nov3_2015_high_iron.bin 
-    - ishare routeros-x86-6.48.5.npk 
+    - ishare detail routeros-x86-6.48.5.npk 
 ```
 
 
