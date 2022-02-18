@@ -1,11 +1,13 @@
-##First Time using juniper appileance: 
+## First Time using juniper appileance: 
 </br>
 #### 1. Juniper will start with root mode, Initially, the root user account requires no password. 
 </br>
 #### 2.Start the Junos OS command-line interface (CLI):
 </br>
-###### `root@# cli`
-###### `root@>`
+**
+`root@# cli`
+`root@>`
+**
 </br>
 #### 3. Enter Junos OS configuration mode:
 
