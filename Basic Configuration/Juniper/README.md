@@ -13,10 +13,10 @@
 
 ![image](https://user-images.githubusercontent.com/78827896/154631982-d99e68b4-a389-4478-83c1-fbab1b06c1ef.png) </br>
 
-# All username and password in this lab is : </br>
+# All username and password in this lab is: </br>
 
-**Username: root ** </br>
-**Password: Lab123 ** </br> 
+**Username: root** </br>
+**Password: Lab123** </br> 
 
 
 
