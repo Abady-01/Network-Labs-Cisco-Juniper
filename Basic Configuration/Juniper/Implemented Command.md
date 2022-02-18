@@ -13,4 +13,8 @@ in juniper insted of VTP there is GVRP and MVRP :
  show protocols mvrp 
  shwo protocols gvrp 
  
+ create interface vlan 
  
+ set vlan MGMT l3-interface vlan.<MGMT vlan-id> example: set vlan MGMT l3-interface vlan.20
+
+** Note ** you can manage juinper device with vlan interface or L3 management interface that exist phisycaly on device 
