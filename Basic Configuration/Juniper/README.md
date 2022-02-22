@@ -13,16 +13,41 @@
 
 ![image](https://user-images.githubusercontent.com/78827896/154631982-d99e68b4-a389-4478-83c1-fbab1b06c1ef.png) </br>
 
-**do this this initial (mandatory) configuration When juniper is booted:**
-root 
-cli
-set root 
+# first time juniper device booting up the initial (mandatory) configuration:
 
+**vqfx-re (ttyd0)**
 
-# All username and password in this lab is: </br>
+**login:** `root`
 
-**Username: root** </br>
-**Password: Lab123** </br> 
+**Password:** `Juniper`
+
+**root@vqfx-re:RE:0%** `cli`
+
+**root@vqfx-re>** `edit`
+
+**root@vqfx-re#** `set system root-authentication plain-text-password` 
+
+**New password:**  ____write a password
+
+**Retype new password:**
+
+**root@vqfx-re#** `set system host-name Juniper_SW_101`
+
+**root@vqfx-re#** `set system login user Juniper01 class super-user authentication plain-text-password` 
+
+**New password:** `Lab123`  
+
+**Retype new password:**`Lab123`
+
+**root@vqfx-re#** `commit` 
+
+### Now exit and login as user was created Juniper01 and your juniper device is ready to work
+
+# All username and password in this lab is: 
+
+**Username: Juniper01** 
+
+**Password: Lab123** 
 
 
 
