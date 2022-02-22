@@ -1,7 +1,7 @@
 
 # Lab content
 
-**in this lab i used** `junos-vsrx3-x86-64-20.1R1.11` **image as Layer 2 Swithc **
+**in this lab i used** `junos-vsrx3-x86-64-20.1R1.11` **image as Layer 2 Swithc**
 
 ### To preparing your lab with this image : </br>
 
@@ -9,9 +9,20 @@
 
 **Then follow this documents** </br>
 
-##### https://www.eve-ng.net/index.php/documentation/howtos/howto-add-juniper-vsrx-ng-15-x-and-later/ 
+##### https://www.eve-ng.net/index.php/documentation/howtos/howto-add-juniper-vqfx/
 
-![image](https://user-images.githubusercontent.com/78827896/154631982-d99e68b4-a389-4478-83c1-fbab1b06c1ef.png) </br>
+![image](https://user-images.githubusercontent.com/78827896/155206694-4a9faaf3-c8ec-47fa-85f9-ca6e2aa8427f.png) </br>
+![image](https://user-images.githubusercontent.com/78827896/155207369-9a52a699-6d2c-4fe7-aa02-8b19d1f58c64.png) </br>
+
+
+`mv /opt/unetlab/addons/qemu/vqfxpfe-10K-F-17.4R1.16/cosim_20180212.qcow2 /opt/unetlab/addons/qemu/vqfxpfe-10K-F-17.4R1.16/hda.qcow2` </br>
+
+`mv /opt/unetlab/addons/qemu/vqfxre-10K-F-17.4R1.16/jinstall-vqfx-10-f-17.4R1.16.img /opt/unetlab/addons/qemu/vqfxre-10K-F-17.4R1.16/hda.qcow2` </br>
+
+![image](https://user-images.githubusercontent.com/78827896/155211094-cf00154d-3c64-4603-a986-82c078329bc4.png) </br>
+
+
+
 
 # first time juniper device booting up the initial (mandatory) configuration:
 
