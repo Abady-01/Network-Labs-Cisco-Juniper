@@ -1,11 +1,18 @@
 
 # Lab content
 
-**in this lab i used** `junos-vsrx3-x86-64-20.1R1.11` **image as Layer 2 Swithc**
+**in this lab I used juniper QFX image as Layer 2 Swithc to work juniper QFX Switch you have to install QFX-routing Engine and QFX-Packet Forward Engine then they work as one device in PnetLab.**
+- `vqfxre-10K-F-18.4R1.9` </br>
+- `vqfxpfe-10K-F-18.4R1.9` </br>
 
-### To preparing your lab with this image : </br>
+</br>
+</br>
 
-**First install image by ishare :** ` ishare pull junos-vsrx3-x86-64-20.1R1.11 ` </br>
+### To preparing your lab with this image : </br> </br>
+
+**First install image on PnetLab by** `ishare` **command :**
+
+` ishare pull vqfxre-10K-F-18.4R1.9 ` **and** `ishare pull vqfxpfe-10K-F-18.4R1.9` </br>
 
 **Then follow this documents** </br>
 
