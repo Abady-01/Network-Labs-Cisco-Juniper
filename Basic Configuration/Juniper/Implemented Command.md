@@ -229,6 +229,7 @@ Juniper01@Juniper_L2_SW-101> `show system loging`
 
 Juniper01@Juniper_L2_SW-101> `show system user`
 
+Juniper01@Juniper_L2_SW-101> `show cli authorization` **To show the authorization of current user**
 
 ## 10.Configure LLDP: 
 Juniper01@Juniper_L2_SW-101#`set protocols lldp interface all`  **This enough to work lldp currectly**
