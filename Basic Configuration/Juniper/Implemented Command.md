@@ -300,6 +300,11 @@ root# set interfaces ge-0/0/<port#>.0 family ethernet-switching port-mode trunk 
  
  
  
+ NOTES: 
+ inter vlan routing in Juniper Switches
+ 
+ notes aboute config file - try to save inside juniper file system - try to replace juniper.conf.gz file bay other in directory /config
+ 
  
  
  
