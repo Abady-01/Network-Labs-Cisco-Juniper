@@ -220,16 +220,38 @@ Juniper01@Juniper_L2_SW-101# `set system login user <username> class <authorize 
 
 ### To verify:
 
-## 10.Configure LLDP: 
-Juniper01@Juniper_L2_SW-102# `set protocols lldp interface all`
+{master:0}[edit system login] </br>
+Juniper01@Juniper_L2_SW-101# `show`
 
-{master:0}[edit protocols lldp] </br>
-Juniper01@Juniper_L2_SW-102# set neighbour-port-info-display port-description
+Juniper01@Juniper_L2_SW-101# `status`
+
+Juniper01@Juniper_L2_SW-101> `show system loging`
+
+Juniper01@Juniper_L2_SW-101> `show system user`
+
+
+## 10.Configure LLDP: 
+Juniper01@Juniper_L2_SW-101#`set protocols lldp interface all`  **This enough to work lldp currectly**
+
+#### Optionaly
+
+
+**{master:0}[edit protocols]  </br>
+Juniper01@Juniper_L2_SW-101# `set lldp?`     </br>    
+Possible completions:  </br>
+lldp &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp; Link Layer Detection Protocol  </br>
+lldp-med &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; LLDP Media Endpoint Discovery**  </br>
+
+
+
+**{master:0}[edit protocols lldp] </br>
+Juniper01@Juniper_L2_SW-102# `set neighbour-port-info-display port-description`**
 
 ### To verify:
-Juniper01@Juniper_L2_SW-101> `show lldp`
-Juniper01@Juniper_L2_SW-101> `show lldp neighbour`
-Juniper01@Juniper_L2_SW-101>
+Juniper01@Juniper_L2_SW-101> `show lldp`        //**to show configuration of lldp** </br>
+Juniper01@Juniper_L2_SW-101> `show lldp neighbour`  </br>
+Juniper01@Juniper_L2_SW-101> `show lldp neighbour interface xe-0/0/0`  </br>
+Juniper01@Juniper_L2_SW-101> `show lldp detail`  </br>
 
   
 
