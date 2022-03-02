@@ -1,4 +1,4 @@
-## First Time using juniper appliance: 
+
 
 #### - Juniper will start with root mode, Initially, the root user account requires no password.  </br>
 
@@ -67,40 +67,3 @@ system {
  > On junper native vlan has to location in heirarchy: </br>
  > 1. `set interface ge-0/0/0 unit 0 family ethernet-switching interface-mode trunk [native-vlan-id <id>]` </br>
  > 2. `set interface ge-0/0/0 native-vlan-id <vlan-id>`
-
-
-
-
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
