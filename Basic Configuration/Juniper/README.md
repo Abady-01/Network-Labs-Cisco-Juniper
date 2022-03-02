@@ -40,6 +40,10 @@
 
 # first time juniper device booting up the initial (mandatory) configuration:
 
+### 1.Turn on vqfx-re and keeep off vqfx-pfe:
+
+### 2. Do this mandatory configuration on vqfx-re:
+
 **vqfx-re (ttyd0)**
 
 **login:** `root`
@@ -66,7 +70,7 @@
 
 **root@vqfx-re#** `commit` 
 
-### Now exit and login as user was created Juniper01 and your juniper device is ready to work
+### Now exit and login as user was created `Juniper01`, Turn on both of engine `vqfxre and vqfxpfe` and your juniper device is ready to work
 
 # All username and password in this lab is: 
 
