@@ -22,10 +22,15 @@
 `New password: type password` </br>
 `Retype new password: retype password` </br>
 
+#### - use SSH client:
+> Generally as SSH protocol if a ssh client request access just by hostname/ipaddress without username like `ssh 192.168.1.1` </br>
+> ssh client try to access by using its username. </br>
+> Example if the client user name is `myuser` and i request ssh connection by typing just ip address `ssh 192.168.1.1` the client itself will complete the requesting command by using its username to be `myuser@192.168.1.1`  
+
 #### - Configure the IP address and prefix length for the device management ether on fxp0 or em0 </br>
 
-`[edit]` </br>
-`root@# set interfaces fxp0 unit 0 family inet address <ip address>/<perfix>` </br>
+>[edit] </br>
+>root@# set interfaces fxp0 unit 0 family inet address <ip address>/<perfix> </br>
 
 #### - Configure Basic system setting like , hostname , back server , dns server , etc.. Under `edit system` </br>
 
