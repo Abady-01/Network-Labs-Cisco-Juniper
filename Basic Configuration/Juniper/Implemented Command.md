@@ -237,16 +237,16 @@ Juniper01@Juniper_L2_SW-101#`set protocols lldp interface all`  **This enough to
 #### Optionaly
 
 
-**{master:0}[edit protocols]  </br>
+{master:0}[edit protocols]  </br>
 Juniper01@Juniper_L2_SW-101# `set lldp?`     </br>    
 Possible completions:  </br>
 lldp &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &ensp;&ensp;&ensp; Link Layer Detection Protocol  </br>
-lldp-med &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; LLDP Media Endpoint Discovery**  </br>
+lldp-med &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; LLDP Media Endpoint Discovery </br>
 
 
 
-**{master:0}[edit protocols lldp] </br>
-Juniper01@Juniper_L2_SW-102# `set neighbour-port-info-display port-description`**
+{master:0}[edit protocols lldp] </br>
+Juniper01@Juniper_L2_SW-102# `set neighbour-port-info-display port-description`
 
 ### To verify:
 Juniper01@Juniper_L2_SW-101> `show lldp`        //**to show configuration of lldp** </br>
