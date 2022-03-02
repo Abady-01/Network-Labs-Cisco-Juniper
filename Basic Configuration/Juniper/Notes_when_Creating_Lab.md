@@ -60,30 +60,19 @@ system {
 #### - Vlan Interface on juniper:
 > Because most of Juniper device is a layer 3 Switch `set vlan vlan100 l3-interface irb.100` this command has **two influence:** </br>
 > **one:** is make vlan 100 L3 vlan and make the state of interface vlan 100 is up up state </br>
-> **seconde:** as i mention because most of juniper Switch is L3 Swithc this command active **inter vlan route** automatically and put interface vlan 100 to routing tabel and all interface vlan has route and reach to other interface vlan. </br>
+> **seconde:** as i mention because most of juniper Switch is L3 Swithc this command active **inter vlan route** automatically and put interface vlan 100 to routing tabel and all interface vlan has route and reach to other interface vlan, so to isolate may i have to use VRF. </br>
 > **Note** Juniper has two logical interface for vlan interface one is `vlan` other is `irb` so besad on which interface is supported by JunOS create vlan interface on it like `set vlan remote l3-interface vlan.20` **or** `set vlan MGMT l3-interface irb.20` and you can know witch logical vlan is support by `show interface terse`
 
  #### - Native Interface: 
  > On junper native vlan has to location in heirarchy: </br>
  > 1. `set interface ge-0/0/0 unit 0 family ethernet-switching interface-mode trunk [native-vlan-id <id>]` </br>
- > 2. `set interface ge-0/0/0  
-/
+ > 2. `set interface ge-0/0/0 native-vlan-id <vlan-id>`
 
-root# commit
- 
-Legacy devices:
 
-root# set interfaces ge-0/0/<port#>.0 family ethernet-switching port-mode trunk [native-vlan-id <id>] vlan members [ whitespace separated list of vlan names or IDs ]
- 
- show ethernet-switching interfaces 
- show ethernet-switching interfaces details
+
+
  
  
- 
- NOTES: 
- inter vlan routing in Juniper Switches
- 
- notes aboute config file - try to save inside juniper file system - try to replace juniper.conf.gz file bay other in directory /config
 
 
 
