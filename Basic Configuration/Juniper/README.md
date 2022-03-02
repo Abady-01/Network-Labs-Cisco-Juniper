@@ -1,4 +1,7 @@
 
+![image](https://user-images.githubusercontent.com/78827896/156429489-99958f79-76bc-49ac-8b47-6d2f05aea451.png)
+
+
 # Lab content
 
 **in this lab I used juniper QFX image as Layer 2 Swithc to work juniper QFX Switch you have to install QFX-routing Engine and QFX-Packet Forward Engine then they work as one device in PnetLab.**
@@ -12,7 +15,11 @@
 
 **First install image on PnetLab by** `ishare` **command :**
 
-` ishare pull vqfxre-10K-F-18.4R1.9 ` **and** `ishare pull vqfxpfe-10K-F-18.4R1.9` </br>
+` ishare pull vqfxre-10K-F-18.4R1.9 `  
+
+</br>
+
+`ishare pull vqfxpfe-10K-F-18.4R1.9` </br>
 
 **Then follow this documents** </br>
 
