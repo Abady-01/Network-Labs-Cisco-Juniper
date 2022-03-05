@@ -36,6 +36,59 @@ vstp { </br>
     
     how many VSTP support vlan  </br>
     
-    and how many PVSTP support vlan  </br> 
-    
+1. implement rstp and its show and its enable or disable </br>
+
+2. implement pvst and its show and its enable or disable </br>
+
+3. implement rpvst+ and its show and its enable or disable </br>
+
+4. implement MSTP and its show and its enable or disable </br>
+
+SW1(config)# spanning-tree mode ? "to enble protocols of STP" </br>
+
+spanning-tree vlan vlan-id priority x "To define priority of bridge for x vlan " </br>
+
+spanning-tree vlan x root primary (on the switch that should be primary) </br>
+spanning-tree vlan x root secondary (on the switch that should be secondary) you have not to type priority number </br>
+
+ show spanning-tree vlan 9 </br>
+ 
+ show spanning-tree </br>
+ 
+ SW1# show spanning-tree summary </br>
+ 
+ show spanning-tree interface interface-id </br>
+ 
+ show spanning-tree root, lists the root’s BID for each VLAN </br>
+ 
+ Port Costs: The interface subcommand spanning-tree [vlan x] cost y lets an engineer </br>
+set the switch’s STP/RSTP cost on that port, either for all VLANs or for a specific VLAN </br>
+on that port. </br>
+
+e the spanning-tree portfast and </br>
+the spanning-tree bpduguard enable interface subcommands. </br>
+
+ channel-group number mode on "to add ether chnnel" </br>
+ 
+ show etherchannel </br>
+ 
+ SW1# show spanning-tree vlan 3 </br>
+ 
+ SW1# show etherchannel 1 summary </br>
+ 
+  show etherchannel 1 port-channel </br>
+ 
+ show etherchannel [channel-group- </br>
+ Lists information about the state of EtherChannels on </br>
+number] {brief | detail | port | port- </br>
+ this switch.</br>
+channel | summary} </br>
+ 
+ e show etherchannel 1 summary </br>
+ 
+# Implementing RSTP </br>
+ 
+ he spanning-tree mode </br>
+rapid-pvst </br> 
+
     
