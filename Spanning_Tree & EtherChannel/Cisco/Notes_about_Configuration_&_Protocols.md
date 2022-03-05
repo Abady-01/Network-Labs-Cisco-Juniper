@@ -64,3 +64,77 @@ document`
  
  port fast - bpdu guard - 
  
+# Notes
+
+And even if some switches use RSTP and some use STP, the switches can
+interoperate and still build a working spanning tree—and you never even have to think about
+changing any settings!
+
+remember STP + RSTP + MSTP is from IEEE while pvst+ and Rpvst+ from Cisco "make sure is VSTP is form IEEE"
+RSTP creates one tree—the Common Spanning Tree (CST) —while RPVST+ creates one
+tree for each and every VLAN. 
+
+MSTP is equal Rpvst because is besad on RSTP and used RSTP Rules and port state 
+
+Chapter 10: RSTP and EtherChannel Configuration page 246 "take a picture"
+ (, you might be interested in reading more about RSTP configuration in the
+companion website’s Appendix O, “Spanning Tree Protocol Implementation.”) 
+
+ with Cisco Catalyst switches dose not support the single tree like STP or RSTP, you have to use multi instances protocol like PVST or RPVST or MSTP "make sure from this info" 
+
+SW1(config)# spanning-tree mode ?
+mst
+ Multiple spanning tree mode
+pvst
+ Per-Vlan spanning tree mode
+rapid-pvst
+ Per-Vlan rapid spanning tree mode
+SW1(config)#
+
+The reason that there is Multi tree instance of STP is for redundancy So if you use MSTP, PVST, RpVST and make the root bridg is one device is not make sance at least two swich most be a root 
+
+ requires a decimal number between 0 and 65,535. But not just any number in that
+range will suffice; it must be a multiple of 2*4096 because the header of BID is change and add system ID multi tree STP has last 2 Bytes for priority, from 4096 to 65535 
+like 4096, 8192, 12288, 16384, 20480, 24576, 28672, 32768, 36864, 40960, 45056, 49152, 53248, 57344, 61440 
+
+. STP no longer operates on physical interfaces Fa0/14 and Fa0/15, instead
+operating on the PortChannel1 interface, so only that interface is listed in the output.
+
+"take pic of 249"
+
+"take pic Appendix page 6"
+
+ most network engineers make the distribution layer switches be the root. For instance,
+the configuration could make D1 be the root by having a lower priority, with D2 config-
+ured with the next lower priority, so it becomes root if D1 fails. "typicaly is the correct behavor" 
+"because if you using Core its have all vlan for all project insted of it let each Distribution be root of its LANs "
+
+# port channel
+
+ Cisco Catalyst switches support the Cisco-proprietary Port Aggregation Protocol
+(PAgP) and the IEEE standard Link Aggregation Control Protocol (LACP) , based on IEEE
+standard 802.3ad. 
+
+PAgP = {desirable | auto}
+LACP = { active | passiv }
+
+or { on | on } you can not use PAgP or LACP with on like {on | passiv} its wrong must on with on, in other side
+
+physical interface remains configured as part of the PortChannel, but it is not used as part of
+the channel, often being placed into some nonworking state.
+The list of items the switch checks includes the following:
+■
+ Speed
+■
+ Duplex
+■
+ Operational access or trunking state (all must be access, or all must be trunks)
+■
+ If an access port, the access VLAN
+■
+ If a trunk port, the allowed VLAN list (per the switchport trunk allowed command)
+■
+ If a trunk port, the native VLAN
+■
+ STP interface settings interface stp cost
+
