@@ -1,4 +1,21 @@
 
+##  5.Trunk Interface configuration and native vlan:
+
+Juniper01@Juniper_L2_SW-101# `set interface xe-0/0/0 unit 0 family ethernet-switching interface-mode trunk`
+
+Juniper01@Juniper_L2_SW-101# `set interface xe-0/0/0 unit 0 family ethernet-switching vlan member [ remote user40 ]`
+
+Juniper01@Juniper_L2_SW-101# `set interface xe-0/0/0 native-vlan-id 10` _**the hierarchy of native vlan is before unit 0 or before logical interface**
+
+### To verify:
+Juniper01@Juniper_L2_SW-101> `show ethernet-switching interface`
+
+Juniper01@Juniper_L2_SW-101> `show ethernet-switching interface detail`
+
+``` 
+     - initial configuration 
+   
+```
 
 **Verifying and Analyzing Ethernet Switching**
 
